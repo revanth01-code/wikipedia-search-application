@@ -43,6 +43,7 @@ function displayResults(search_results){
 function searchWiki(event){
     if(event.key==="Enter"){
         spinnerEl.classList.remove("d-none");
+        search_results.textContent="";
         let inputValue = input_text.value;
         let url = "https://apis.ccbp.in/wiki-search?search="+inputValue;
         let options={
